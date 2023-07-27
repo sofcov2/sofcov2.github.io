@@ -37,6 +37,22 @@
         color:white;
         border:3px solid dodger blue;
       }
+
+      .container .btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #555;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+}
       </style>
   </head>
   <body>
@@ -72,9 +88,10 @@
       </br>
       </br>
       </br>
-      <image src='level.png'>
-          <button href='https://sofcov2.github.io/pricing/'>Pricing</button>
-      </image>
+<div class="container">
+  <img src="level.png" alt="next level" style="width:100%">
+  <button class="btn">Button</button>
+</div>
 </body>
   
 </html>
