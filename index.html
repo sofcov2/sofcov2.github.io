@@ -47,6 +47,32 @@
       #if{
         color:black;
       }
+
+      .container {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+}
+
+.container img {
+  height: auto;
+}
+
+.container .btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #555;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+}
       </style>
   </head>
   <body>
@@ -85,9 +111,11 @@
       </br>
     </div>
       <center>
-  <img src="level.png" alt="next level" style="width:50%">
     </br>
-      <button href='https://sofcov2.github.io/pricing/'>Get started</button>
+        <div class="container">
+  <img src="level.png" alt="next level" style="width:50%">
+   <button href='https://sofcov2.github.io/pricing/'>Get started</button>
+</div>
       </center>
 </body>
   
