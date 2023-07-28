@@ -48,6 +48,34 @@
       #if{
         color:black;
       }
+
+      /*add button centered over image*/
+.ready:before {
+   content: "Get started";
+   line-height: 1.3em;
+   z-index: 9999;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   -ms-transform: translate(-50%, -50%);
+   background-color: #000000;
+   color: #ffffff;
+   padding: 12px 24px;
+   font-size: 20px;
+   font-weight: bold;
+   border-radius: 50px;
+   transition: all .5s ease;
+}
+/*button on hover*/
+.ready:hover {
+   background-color: #ffffff;
+   color: #000000;
+   transition: all 0.5s;
+   -moz-transition: all 0.5s;
+   -webkit-transition: all 0.5s;
+   letter-spacing: 1px;
+}
       </style>
   </head>
   <body>
@@ -86,8 +114,7 @@
       </br>
     </div>
       <center>
-  <img src="level.png" alt="next level" style="width:50%">
-   <button href='https://sofcov2.github.io/pricing/'>Get started</button>
+  <img src="level.png" alt="next level" style="width:50%" class='ready'>
           </image>
       </center>
 </body>
