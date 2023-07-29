@@ -52,6 +52,32 @@
       #story{
         color:dodgerblue;
       }
+      .container {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+}
+
+.container img {
+  width: 100%;
+  height: auto;
+}
+
+.container .btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #555;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+}
       </style>
   </head>
   <body>
@@ -95,10 +121,10 @@
       </br>
     </div>
       <center>
-             <a href='https://sofcov2.github.io/pricing/'><button id='button'>Get started</button></a>
-        </br>
-        </br>
-  <img src="level.png" alt="next level" style="width:50%">
+<div class="container">
+  <img src="https://sofcov2.github.io/level.png" style="width:100%">
+  <button class="btn">Get started</button>
+</div>
         </br>
       </center>
 </body>
