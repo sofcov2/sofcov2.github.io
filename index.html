@@ -19,6 +19,12 @@ s1.charset='UTF-8';
 s1.setAttribute('crossorigin','*');
 s0.parentNode.insertBefore(s1,s0);
 })();
+   
+   $("button").click(function() {
+    $('html,body').animate({
+        scrollTop: $(".container").offset().top},
+        'slow');
+});
 </script>
     
     <style>
@@ -153,6 +159,7 @@ s0.parentNode.insertBefore(s1,s0);
         opacity:1;
       }
       </style>
+    
   </head>
   <body>
     <image src='sofco v2 logo black.png' id='logo' alt='logo'>
@@ -173,7 +180,7 @@ s0.parentNode.insertBefore(s1,s0);
   </br>
   </br>
 </div>
-            <a href='https://sofcov2.github.io/contactus/'><button id='contactnow'>Contact us now</button></a>
+            <a href='https://sofcov2.github.io/contactus/'><button id='contactnow' type="button">Contact us now</button></a>
         </header>
        </br>
        </br>
