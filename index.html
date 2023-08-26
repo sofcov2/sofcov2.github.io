@@ -156,6 +156,36 @@ s0.parentNode.insertBefore(s1,s0);
         height:70px;
         margin:3px;
       }
+      
+
+       img{
+        font-align:right;
+        width:160px;
+        height:110px;
+      }
+div.gallery {
+  border: 1px solid #ccc;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
       </style>
     
   </head>
@@ -242,17 +272,36 @@ Here are some of our past websites:
       <div id='youget'><h2>for only 1$/day</h2></div>
       </br>
       </br>
-             <image src='ceo.jpg' id='icons'>
-              <image src='learning.jpg' id='icons'>
-              <image src='discord.png' id='icons'>
+      </br>
+                
+      <div class="responsive">
+  <div class="gallery">
+    <image src='ceo.jpg' id='icons'>
+    <div class="desc">
+     <div id='youget'><h3>- You will get a 1 hour chat with our CEO</h3></div>
+  </div>
+</div>
+       
+<div class="responsive">
+  <div class="gallery">
+    <image src='learning.jpg' id='icons'>
+    <div class="desc">
+     <div id='youget'><h3>-And a tutorial to becoming a game developer or software engineer</h3></div>
+  </div>
+</div>
 
-           <div id='youget'><h3>- You will get invited to a discordy</h3></div>
-           <div id='youget'><h3>- You will get a 1 hour chat with our CEO</h3></div>
-           <div id='youget'><h3>-And a tutorial to becoming a game developer or software engineer</h3></div>
+<div class="responsive">
+  <div class="gallery">
+        <image src='discord.png' id='icons'>
+    <div class="desc">
+      <div id='youget'><h3>- You will get invited to a discord</h3></div>
+  </div>
+</div>
+        
       </br>
       </br>
       </br>
-    </div>
+      </div>
       </br>
       </br>
       </br>
